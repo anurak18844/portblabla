@@ -366,11 +366,11 @@
         </div>
         <h1 class="text-center mb-5 mt-5">VIDEO สาธิตวิธีการใช้ DURIAN METER APPLICATION</h1>
         <div class="ratio ratio-21x9 container mt-5" style="width: 70%;">
-            <iframe src="Video/durianmeter.mp4" title="YouTube video" allowfullscreen></iframe>
+            <iframe src="Video/durianmeter.mp4" title="YouTube video" allowfullscreen id="myVideo1"></iframe>
         </div>
         <h1 class="text-center mb-5 mt-5">VIDEO สาธิตวิธีการใช้ WEB NVC ANALYTICS</h1>
         <div class="ratio ratio-21x9 container mt-5" style="width: 70%;">
-            <iframe src="Video/nvc.mp4" title="YouTube video" allowfullscreen></iframe>
+            <iframe src="Video/nvc.mp4" title="YouTube video" allowfullscreen id="myVideo2"></iframe>
         </div>
     </div>
 
@@ -440,6 +440,12 @@
 
 </body>
 <script>
+
+    v1 =  document.getElementById("myVideo1");
+    v2 =  document.getElementById("myVideo2");
+    v1.pause();
+    v2.pause();
+    
     var r = document.querySelector(':root');
     function changeColorRed() {
         r.style.setProperty('--color', 'red');
